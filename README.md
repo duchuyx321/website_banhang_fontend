@@ -53,8 +53,7 @@
 ## 🛠️ Công nghệ sử dụng
 - **React.js**  
 - **React Router** – điều hướng trang  
-- **Axios** – gọi API Backend  
-- **Tailwind CSS / SCSS** – thiết kế giao diện  
+- **Axios** – gọi API Backend    
 - **Redux / Context API** – quản lý state  
 
 ---
