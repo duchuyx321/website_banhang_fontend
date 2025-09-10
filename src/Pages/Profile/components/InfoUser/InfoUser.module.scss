@@ -1,0 +1,46 @@
+.status {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: #4c4f47;
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #a3e635;
+
+    &.online {
+      background: #22c55e;
+    }
+
+    &.offline {
+      background: #f87171;
+    }
+  }
+
+  .text {
+    font-weight: 500;
+  }
+}
+
+.name {
+  font-size: 1.4rem;
+  margin-top: 0.6rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+  color: #000;
+
+  .role-value {
+    font-weight: 600;
+    color: #000;
+  }
+}

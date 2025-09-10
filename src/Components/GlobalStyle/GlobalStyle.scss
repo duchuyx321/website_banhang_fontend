@@ -1,19 +1,73 @@
 @import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 :root {
-    --white-color: ;
-    --black-color: ;
+    --white-color: #ffffff;
+    --black-color: #18191a;
+    --text-color: #e2e8f0;
+    --primary: #0ea5e9;
+
+    --height-header-wrapper: 7rem;
+    --height-header-learning-wrapper: 6rem;
+
+    --sidebar-width-default: 25rem;
+    --sidebar-width-setting: 35rem;
+
+    --profile-sidebar-width: 26rem;
+    --profile-padding: 2rem;
 }
 
-html {
-    font-size: 62.5%;
-}
-
-* {
-    padding: 0;
+*,
+*::before,
+*::after {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%; // 1rem = 10px
+    scroll-behavior: smooth;
+}
+
 body {
+    font-size: 1.6rem;
+    font-family: 'Inter', 'Oswald', sans-serif;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url('/assets/bg-code-fade.jpg') center / cover no-repeat;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: -1;
+}
+
+a,
+input,
+button,
+label,
+ul,
+li {
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+    user-select: none;
+    font-family: inherit;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
 }
