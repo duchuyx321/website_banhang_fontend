@@ -5,7 +5,12 @@ import { config } from '~/Config';
 import Home from '~/Pages/Home';
 
 //  public router
-const PublicRouter = [{ path: config.router.home, component: Home }];
+const PublicRouter = [
+    {
+        path: config.router.home,
+        component: Home,
+    },
+];
 
 // user router
 const UserRouter = [];
