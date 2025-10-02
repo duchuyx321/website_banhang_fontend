@@ -1,10 +1,32 @@
+// responsive
+
+// mobile < 740px
+@media only screen and (max-width: 739px) {
+    .wrapper {
+        & > .navbar {
+            display: none;
+        }
+    }
+}
+// tablet (740px - 1024px)
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+// desktop >= 1024px
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+}
+//  > 1400
+@media only screen and (min-width: 1400px) {
+}
 .wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 2.4px;
     height: var(--header-height);
 }
 .logo {
     & > h3 {
+        font-size: 13px;
+        font-weight: 300;
     }
 }

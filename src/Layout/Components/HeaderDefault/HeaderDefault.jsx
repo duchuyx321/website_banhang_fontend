@@ -1,6 +1,8 @@
 import classNames from 'classnames/bind';
 import style from './HeaderDefault.module.scss';
 import Navbar from './Components/Navbar';
+import Search from './Components/Search';
+import Action from './Components/Action';
 
 const cx = classNames.bind(style);
 function HeaderDefault() {
@@ -12,6 +14,8 @@ function HeaderDefault() {
             <nav className={cx('navbar')}>
                 <Navbar />
             </nav>
+            <Search />
+            <Action />
         </div>
     );
 }

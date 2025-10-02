@@ -1,0 +1,10 @@
+.wrapper {
+    .btn_action {
+        padding: 8px;
+        border-color: var(--Alto);
+        & > h3 {
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,8 +1,8 @@
 .wrapper {
     width: 100%;
     display: flex;
-    & > .navbar {
-        padding: 0;
+    & > li > .navbar {
+        padding: 8px;
     }
 }
 .navbar {
