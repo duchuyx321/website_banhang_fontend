@@ -1,6 +1,7 @@
 export const router = {
     home: '/',
     product: '/product',
-    detailtProduct: '/product/*',
-    // router
+    detailProduct: '/product/:id',
+    admin_product: '/admin_product',
+    admin_user: '/admin_user',
 };

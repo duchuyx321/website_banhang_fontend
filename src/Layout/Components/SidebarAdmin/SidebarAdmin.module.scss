@@ -1,0 +1,68 @@
+.wrapper {
+    width: 250px;
+    height: 100vh;
+    background-color: #1e2a38;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.topSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00c897;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu li a.active {
+    background-color: #00c897;
+    color: #1b2a41 !important;
+}
+
+.active {
+    background-color: #00c897;
+    color: #1b2a41 !important;
+}
+
+.adminInfo {
+    margin-top: auto;
+    p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    button {
+        margin-top: 8px;
+        background-color: transparent;
+        border: none;
+        color: #ff4d4f;
+        cursor: pointer;
+        font-size: 14px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
