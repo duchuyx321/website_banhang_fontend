@@ -1,10 +1,8 @@
 /* eslint-disable no-undef */
 import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
 
 const httpsRequests = axios.create({
-    baseURL: process.env.REACT_APP_HTTPS_BACKEND,
+    baseURL: import.meta.env.VITE_HTTPS_BACKEND,
     withCredentials: true, // đẩy cookie
 });
 

@@ -1,0 +1,10 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2.4px;
+    height: var(--header-height);
+}
+.logo {
+    & > h3 {
+    }
+}
